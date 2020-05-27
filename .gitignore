@@ -1,0 +1,6 @@
+*.pyc
+*~
+__pycache__
+project01
+/static
+.DS_Store

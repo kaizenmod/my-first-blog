@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+
+<h1 style="color: #FF4500">{{title}}</h1>
+<h3>Список любимых книг любимых авторов: британки Джоан Кэтрин Роуллинг и американца Дэна Брауна</h3>
+<p>
+{% for i in object_list %}
+	<h2 style="color: #0000CD"> <a href="/{{i.id}}/">{{i.title}}</a></h2>
+	<p style="color: #FF6347">{{i.content}}</p>
+	<p style="color: #FF6347">{{i.tpublish}}</p>
+	<p style="color: #FF6347">{{i.id}}</p>
+{% endfor %}
+
+</p>
+
+</body>
+</html>

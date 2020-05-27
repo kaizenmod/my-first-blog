@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Детали книги
+	</title>
+</head>
+<body>
+<p>
+	<h1>{{title}}</h1>
+	<h2>{{instance.title}}</h2>
+	<p>{{instance.content}}</p>
+	<p>{{instance.tpublish}}</p>
+	<p>{{instance.id}}</p>
+<!--#if expr="{{instance.id=1}}"-->
+  <img src="https://i.pinimg.com/736x/8a/05/3b/8a053ba931bffce7d2def5cb9ea59c64.jpg">
+<!--#endif--> 
+</p> 
+</body>
+</html>
